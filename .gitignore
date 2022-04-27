@@ -1,129 +1,242 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+#1 
+n = int(input("Ведите"))
+a = [] 
+for i in range (1,n+1):
+    a.append(i) 
+print (a)  
+""" 
+"""
+#2 
+n = int (input("Ведите n:")) 
+x = int (input("Ведите x:")) 
+i = 0 
+a = [] 
+while n > 1: 
+    a.append(x) 
+    n -=1 
+    x +=1 
+print (a) 
+"""
+"""
+#3 
+n =  int (input("Ведите n:"))  
+a = [] 
+for i in range(1, n+1): 
+    a.append (i*i) 
+print (a)
+""" 
+"""
+#4 
+n =  int (input("Ведите n:"))   
+a = [] 
+for i in range(1, n+1): 
+    a.append (i) 
+print (a)
+"""
+"""
+#5 
+n = int (input("Ведите n:")) 
+x = int (input("Ведите x:")) 
+i = 0 
+a = [] 
+while n > 1: 
+    a.append(x) 
+    n -=1 
+    x +=1  
+a.reverse
+print (a) 
+""" 
+"""
+#6
+n = int(input("enter")) 
+b = 1 
+z = [] 
+c = 2 
+while b != n+1: 
+    z.append(c**b) 
+    b = b + 1 
+z.reverse() 
+print(z) 
+"""
+"""
+#7
+import random 
+A = int(input("first")) 
+B = int(input("second")) 
+N = int(input("colichestvo")) 
+i = 0 
+z = 0 
+while i < N: 
+    a = random.randint(A,B) 
+    x = a%100//10 
+    i+=1 
+    print(a) 
+    if x%2 != 0: 
+        pass 
+    else: 
+        z +=1 
+print ("elementov =", z)
+"""
+"""
+#8 
+import random
+A = int(input("Enter first  number - "))
+B = int(input(" Enter second number - "))
+N = int(input("colichestvo - "))
+a = 0
+b = 0
+while N > 0:
+    Num = random.randint(A, B)
+    print(Num)
+    N -=1
+    if (Num%100//10)%2 > 0:
+        a +=1
+    else:
+        b +=1
+print("четных/ нечетных", a,b)
+"""   
+"""
+#9 
+import random
+A=int(input("Enter first - "))
+B = int(input(" Enter second - "))
+N = int(input("kolichestvo - "))
+a = 0
+z = []
+while N > 0:
+    b = random.randint(A,B)
+    N -= 1
+    if (b%100)%2 ==0:
+        z.append(b)
+        print(b)
+    if (b%100)%2 !=0:
+        print("нечетное - ",b)
+     
+for i in z:
+    if i >a:
+        a = i
+    else:
+        pass
+    
+print ("max = ", a) 
+"""
+"""
+#10 
+import random  
 
-# C extensions
-*.so
+A= int(input("first "))
+B = int(input("second "))
+N = int(input("col "))
+z =[]
+while N > 0:
+    b = random.randint(A,B)
+    N-=1
+    z.append(b)
+    print (b)
+l = 0        
+a =0    
+for i in z:
+    a = a +i
+    l +=1
+    
+print(a/l) 
+"""
+"""
+#11 
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+import random
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+A= int(input("first "))
+B = int(input("second "))
+X = int(input(" zad num "))
+N  = int(input("shoots? "))
+z  = 0
+while N > 0:
+    b = random.randint(A,B)
+    N -=1
+    print (b)
+    if b == X:
+        z += 1
+    else:
+        pass
+        
+print("popadanie - ", z, "times")       
+if z == 0:
+    print("u win") 
+"""
+"""
+#12 
+import random
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+A= int(input("first "))
+B = int(input("second "))
+N  = int(input("col "))
+X = int(input("Ur numb?"))
+d = 0
+j=[]
+while N > 0:
+    b = random.randint(A,B)
+    N-=1
+    print (b)
+    if b == X:
+       d  += 1
+       j.append(d)
+    else:
+        d +=1
+        pass
+    
+print("nomera ", j)  
+"""
+"""
+#13 
+import random
+A = int(input(" Min - "))
+B = int(input("Max - "))
+N = int(input("Col - "))
+z =[]
+while N > 0:
+    b = random.randint(A,B)
+    N-=1
+    z.append(b)
+    print (b)
+  
+col = 0    
+y = 0        
+for i in z:
+    if i >= y:
+        y = i
+        col = col +1
+    else:
+        pass
+    
+print("max  = ", y, "times - ", col)
+"""
+"""
+#14 
+import random
+Min = int(input(" Enter min "))
+Max = int(input(" Enter Max "))
+N = int(input("Times "))   
+z = []
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+while N > 0:
+    b = random.randint(Min, Max)
+    N -=1
+    z.append(b)
+    
+print(z)
 
-# Translations
-*.mo
-*.pot
+min = 3727273738383838382829
+max = 0
+for i in z:
+    if i > max:
+        max = i
+    if min > i:
+        min = i
+    else:
+        pass
+        
+print("min - ", min, "max - ", max) 
+"""
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
